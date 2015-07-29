@@ -12,6 +12,9 @@ class InputsController < ApplicationController
    redirect_to root_path
   end
 
+  def managers
+  end
+
   private
 
   def input_params

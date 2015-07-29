@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150728235901) do
+ActiveRecord::Schema.define(version: 20150729201246) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 20150728235901) do
     t.integer  "total_trench"
     t.string   "completion_date"
     t.string   "cable_types"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "managers", force: true do |t|
+    t.string   "name"
+    t.string   "date"
+    t.string   "select_run"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
