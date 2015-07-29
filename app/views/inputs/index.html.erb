@@ -1,24 +1,30 @@
 <% @inputs.each do |input| %>
-<div class="booyah-box col-xs-10 col-xs-offset-1">
- <table>
-  <tr>
-   <th>Circuits</th>
-   <th>Start</th>
-   <th>End</th>
-   <th>Estimated Trench</th>
-   <th>Estimated Slack</th>
-   <th>Completion Date</th>
-   <th>Cable Size</th>
-  </tr>
-  <tr>
-   <td><%= input.circuit  %></td>
-   <td><%= input.start_run  %></td>
-   <td><%= input.end_run  %></td>
-   <td><%= input.estimated_trench  %></td>
-   <td><%= input.estimated_slack  %></td>
-   <td><%= input.completion_date  %></td>
-   <td><%= input.cable_types  %></td>
-  </tr>
+<div class="table-responsive col-xs-10 col-xs-offset-1">
+ <table class="table table-striped">
+  <!-- Table Headers -->
+  <thead>
+   <tr>
+    <th>Circuits</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Estimated Trench</th>
+    <th>Estimated Slack</th>
+    <th>Completion Date</th>
+    <th>Cable Size</th>
+   </tr>
+  </thead>
+  <!-- Table Body -->
+  <tbody>
+   <tr>
+    <td><%= input.circuit  %></td>
+    <td><%= input.start_run  %></td>
+    <td><%= input.end_run  %></td>
+    <td><%= input.estimated_trench  %></td>
+    <td><%= input.estimated_slack  %></td>
+    <td><%= input.completion_date  %></td>
+    <td><%= input.cable_types  %></td>
+   </tr>
+  </tbody>
  </table>
 </div>
 <% end %>

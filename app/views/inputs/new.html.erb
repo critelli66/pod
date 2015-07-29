@@ -1,0 +1,16 @@
+<div class="table-responsive col-xs-10 col-xs-offset-1">
+  <%= simple_form_for @input do |f| %>
+  <table class="table table-striped">
+   <tr>
+    <td><%= f.input :circuit %></td>
+    <td><%= f.input :start_run %></td>
+    <td><%= f.input :end_run %></td>
+    <td><%= f.input :estimated_trench %></td>
+    <td><%= f.input :estimated_slack %></td>
+    <td><%= f.input :completion_date %></td>
+    <td><%= f.input :cable_types %></td>
+   </tr>
+  </table>
+   <%= f.submit 'Submit', :class => 'btn btn-primary' %>
+ <% end %>
+</div>
