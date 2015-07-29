@@ -1,1 +1,24 @@
-<h1>This is for PLC POD</h1>
+<% @inputs.each do |input| %>
+ <table>
+  <tr>
+   <th>Circuits</th>
+   <th>Start</th>
+   <th>End</th>
+   <th>Estimated Trench</th>
+   <th>Estimated Slack</th>
+   <th>Completion Date</th>
+   <th>Cable Size</th>
+  </tr>
+  <tr>
+   <td><%= input.circuit  %></td>
+   <td><%= input.start_run  %></td>
+   <td><%= input.end_run  %></td>
+   <td><%= input.estimated_trench  %></td>
+   <td><%= input.estimated_slack  %></td>
+   <td><%= input.completion_date  %></td>
+   <td><%= input.cable_types  %></td>
+  </tr>
+ </table>
+
+ <hr />
+<% end %>
