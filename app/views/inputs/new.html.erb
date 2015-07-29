@@ -1,4 +1,5 @@
 <div class="table-responsive col-xs-10 col-xs-offset-1">
+  <!-- Input Page in Proper Format -->
   <%= simple_form_for @input do |f| %>
   <table class="table table-striped">
    <tr>
@@ -11,6 +12,7 @@
     <td><%= f.input :cable_types %></td>
    </tr>
   </table>
+   <!-- Submit Button -->
    <%= f.submit 'Submit', :class => 'btn btn-primary' %>
  <% end %>
 </div>
